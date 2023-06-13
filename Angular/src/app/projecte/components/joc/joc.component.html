@@ -1,0 +1,31 @@
+<div class="general">
+  <div>
+    <canvas #canvasElement width="500" height="500" (click)="onCanvasClick($event)"></canvas>
+  </div>
+  <div>
+    <div *ngFor="let soldat of soldats" class="soldatdiv" draggable="true" (click)="onSoldatClick(soldat)">
+      <div class="imagediv">
+        <img src="../../../../assets/aSoldier.png">
+      </div>
+      <div>
+        <p>Salut: {{ soldat.salut }}</p>
+        <p>Defensa: {{ soldat.defensa }}</p>
+        <p>Atac: {{ soldat.atac }}</p>
+        <p>Fiabilitat: {{ soldat.fiabilitat }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button (click)="moveSoldat('amunt')">amunt</button>
+    <button (click)="moveSoldat('avall')">avall</button>
+    <button (click)="moveSoldat('esquerda')">esquerda</button>
+    <button (click)="moveSoldat('dreta')">dreta</button>
+  </div>
+
+  <div>
+    <button (click)="atac()">
+      Atacar
+      <!-- <img src="../../../../assets/Bomb.webp"> -->
+    </button>
+  </div>
+</div>

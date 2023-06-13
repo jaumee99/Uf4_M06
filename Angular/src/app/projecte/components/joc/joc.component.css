@@ -1,0 +1,27 @@
+.general {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.soldatdiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.imagediv img {
+  width: 50px;
+  height: 50px;
+}
+
+canvas {
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
